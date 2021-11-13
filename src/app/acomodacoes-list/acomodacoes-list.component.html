@@ -1,0 +1,14 @@
+<h2>Acomodacoes</h2>
+
+<div class="acomodacao" *ngFor="let acomodacao of acomodacoes | async">
+  <div *ngIf="achou(acomodacao)">
+    <h3>
+      <a>Id: {{ acomodacao.id }}</a>
+    </h3>
+    <h2>{{ acomodacao.tipo }}</h2>
+    <h2>{{ acomodacao.capacidade }}</h2>
+    <h2>{{ acomodacao.localizacao }}</h2>
+    <h2>{{ acomodacao.permiteanimais }}</h2>
+    <h2>{{ acomodacao.temestacionamento }}</h2>
+  </div>
+</div>
