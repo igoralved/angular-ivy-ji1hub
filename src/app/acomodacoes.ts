@@ -8,8 +8,8 @@ export interface Acomodacao {
   tipo: String;
   capacidade: number;
   localizacao: String;
-  permiteanimais: boolean;
-  temestacionamento: boolean;
+  permiteAnimais: boolean;
+  temEstacionamento: boolean;
 }
 
 export const acomodacoes = [
@@ -18,23 +18,23 @@ export const acomodacoes = [
     tipo: 'CASA',
     capacidade: 13,
     localizacao: 'New York',
-    permiteanimais: true,
-    temestacionamento: true,
+    permiteAnimais: true,
+    temEstacionamento: true,
   },
   {
     id: 2,
     tipo: 'APARTAMENTO',
     capacidade: 10,
     localizacao: 'Miami',
-    permiteanimais: true,
-    temestacionamento: true,
+    permiteAnimais: true,
+    temEstacionamento: true,
   },
   {
     id: 3,
     tipo: 'APARTAMENTO',
     capacidade: 20,
     localizacao: 'New York',
-    permiteanimais: false,
-    temestacionamento: true,
+    permiteAnimais: false,
+    temEstacionamento: true,
   },
 ];
