@@ -12,6 +12,4 @@ export class AcomodacaobankService {
   getAll(): Observable<Acomodacao[]> {
     return this.http.get<Acomodacao[]>('/assets/acomodacoes.json');
   }
-
-  
 }
