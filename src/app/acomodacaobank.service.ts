@@ -13,7 +13,5 @@ export class AcomodacaobankService {
     return this.http.get<Acomodacao[]>('/assets/acomodacoes.json');
   }
 
-  getPorLoc(localizacao: String): Observable<Acomodacao[]> {
-    return this.http.get<Acomodacao[]>('/assets/acomodacoes.json');
-  }
+  
 }
