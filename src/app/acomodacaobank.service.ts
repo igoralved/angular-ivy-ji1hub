@@ -5,8 +5,6 @@ import { Acomodacao } from './acomodacoes';
 
 @Injectable({ providedIn: 'root' })
 export class AcomodacaobankService {
-  acomodacoes: Acomodacao[] = [];
-
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<Acomodacao[]> {
