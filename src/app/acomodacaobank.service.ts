@@ -8,6 +8,6 @@ export class AcomodacaobankService {
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<Acomodacao[]> {
-    return this.http.get<Acomodacao[]>('/assets/acomodacoes.json');
+    return this.http.get<Acomodacao[]>(' https://igorjuliana.herokuapp.com/');
   }
 }
