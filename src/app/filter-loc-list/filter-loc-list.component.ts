@@ -31,7 +31,9 @@ export class FilterLocListComponent implements OnInit {
   }
 
   valido(acomodacao: Acomodacao) {
-    if (acomodacao.localizacao === this.aLocFromRoute) {
+    if (
+      acomodacao.localizacao.toLowerCase() === this.aLocFromRoute.toLowerCase()
+    ) {
       return true;
     }
   }
